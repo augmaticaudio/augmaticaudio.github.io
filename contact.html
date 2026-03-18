@@ -90,15 +90,34 @@
             </div>
 
             <div class="form-card">
-                <form action="https://augmaticaudio.lemonsqueezy.com/email-subscribe/external" method="post">
+                <form id="newsletter-form">
                     <div class="mb-3">
                         <input type="email" class="form-control" name="email" id="newsletter-email" placeholder="your@email.com" required>
                     </div>
 
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-outline-accent">Subscribe</button>
+                        <button type="submit" class="btn btn-outline-accent" id="newsletter-btn">Subscribe</button>
                     </div>
                 </form>
+                <script>
+                    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        var btn = document.getElementById('newsletter-btn');
+                        var email = document.getElementById('newsletter-email').value;
+                        btn.textContent = 'Subscribing...';
+                        btn.disabled = true;
+                        fetch('https://augmaticaudio.lemonsqueezy.com/email-subscribe/external', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                            body: 'email=' + encodeURIComponent(email),
+                            mode: 'no-cors'
+                        }).then(function() {
+                            window.location.href = 'https://augmaticaudio.com/thanks-newsletter.html';
+                        }).catch(function() {
+                            window.location.href = 'https://augmaticaudio.com/thanks-newsletter.html';
+                        });
+                    });
+                </script>
             </div>
         </div>
     </section>
