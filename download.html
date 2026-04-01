@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Augmatic GRE</title>
+    <meta name="description" content="Download Augmatic GRE VST3 plugin for macOS and Windows.">
+    <link rel="icon" type="image/png" href="img/app-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .download-card {
+            background-color: var(--gre-surface);
+            border: 1px solid var(--gre-surface-light);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: border-color 0.2s;
+        }
+        .download-card:hover {
+            border-color: var(--gre-accent-dim);
+        }
+        .download-card .file-info h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .download-card .file-meta {
+            color: var(--gre-text-muted);
+            font-size: 0.85rem;
+        }
+        .file-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .file-list-header {
+            color: var(--gre-text-muted);
+            font-size: 0.85rem;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--gre-surface-light);
+        }
+        @media (max-width: 576px) {
+            .download-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="img/app-icon.png" alt="Augmatic Audio" width="32" height="32" class="d-inline-block align-text-top me-2" style="border-radius: 6px;">
+                Augmatic Audio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#buy">Buy</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="download.html">Download</a></li>
+                    <li class="nav-item"><a class="nav-link" href="user-manual/index.html">Manual</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq/index.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="changelog.html">Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vibe-coding.html">Vibe Coding</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="license.html">License</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="manual-page">
+        <div class="container">
+            <div class="manual-header text-center">
+                <h1>Download</h1>
+                <p class="lead mt-3 mx-auto">
+                    Augmatic GRE is an algorithmic MIDI drum-pattern generator.
+                </p>
+                <p class="lead mt-3 mx-auto">
+                    AUv3 plugin and App for iPad, iPhone and Mac.
+                    <br>
+                    VST3 plugin for Windows PC and Mac.
+                </p>
+                <p class="mt-3"><a href="index.html#buy" style="display:inline-flex;align-items:center;justify-content:center;gap:4px;background:#fff;color:#000;border:1px solid #fff;border-radius:8px;height:54px;width:162px;font-size:0.95rem;font-weight:500;text-decoration:none;line-height:1.4;box-sizing:border-box">
+                        <svg style="width:28px;height:28px;margin-right:-2px" viewBox="0 0 24 24" fill="#000"><path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v6.81l-6-1.15V13zm7 .25L20 13v8.75l-10-1.15V13.25z"/></svg>
+                        <svg style="width:28px;height:28px;margin-left:-2px" viewBox="0 0 24 24" fill="#000"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        Buy
+                    </a></p>
+            </div>
+
+            <div class="file-list" id="file-list">
+                <noscript>
+                    <div class="download-card">
+                        <div class="file-info">
+                            <h3>Augmatic-GRE-VST3-macOS-1.2.0.pkg</h3>
+                            <span class="file-meta">macOS Installer (Intel &amp; Apple Silicon)</span>
+                        </div>
+                        <a href="download/Augmatic-GRE-VST3-macOS-1.2.0.pkg" class="btn btn-outline-accent" download>Download</a>
+                    </div>
+                    <div class="download-card">
+                        <div class="file-info">
+                            <h3>Augmatic-GRE-VST3-Windows-1.2.0.exe</h3>
+                            <span class="file-meta">Windows Installer</span>
+                        </div>
+                        <a href="download/Augmatic-GRE-VST3-Windows-1.2.0.exe" class="btn btn-outline-accent" download>Download</a>
+                    </div>
+                </noscript>
+            </div>
+        </div>
+    </div>
+
+    <!-- System Requirements (from index.html) -->
+    <section class="system-requirements" id="system-requirements" style="padding-top:4rem">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">System Requirements</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="req-card">
+                        <div class="req-platform" style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:12px">
+                            <svg style="width:36px;height:36px;margin-bottom:8px" viewBox="0 0 24 24" fill="currentColor" opacity="0.6"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <h3 style="color:#888888">iPad & iPhone</h3>
+                            <span class="badge" style="font-size:1rem;padding:0.4em 0.8em;background-color:#888888;color:#050505">AUv3</span>
+                        </div>
+                        <ul class="req-list" style="padding-left:1.5rem;padding-right:1.5rem">
+                            <li>iPadOS / iOS 15+</li>
+                            <li>Apple A12 chip or newer</li>
+                            <li>100 MB free disk space</li>
+                            <li>Internet connection</li>
+                            <li>Compatible hosts: AUM, Drambo, Loopy Pro, Cubasis</li>
+                            <li>Third-party plugin or hardware to generate drum sounds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="req-card">
+                        <div class="req-platform" style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:12px">
+                            <svg style="width:36px;height:36px;margin-bottom:8px" viewBox="0 0 24 24" fill="currentColor" opacity="0.6"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <h3 style="color:#888888">Mac</h3>
+                            <div style="display:inline-flex;gap:0.5em"><span class="badge" style="font-size:1rem;padding:0.4em 0.8em;background-color:#888888;color:#050505">AUv3</span><span class="badge" style="font-size:1rem;padding:0.4em 0.8em;background-color:#888888;color:#050505">VST3</span></div>
+                        </div>
+                        <ul class="req-list" style="padding-left:1.5rem;padding-right:1.5rem">
+                            <li>macOS 11+</li>
+                            <li>4 GB RAM</li>
+                            <li>Apple Silicon or Intel 3.4 GHz CPU</li>
+                            <li>100 MB free disk space</li>
+                            <li>Internet connection</li>
+                            <li>Compatible hosts: Ableton Live, Logic Pro, Cubase, FL Studio, Bitwig, REAPER</li>
+                            <li>Third-party plugins or hardware to generate drum sounds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="req-card">
+                        <div class="req-platform" style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:12px">
+                            <svg style="width:36px;height:36px;margin-bottom:8px" viewBox="0 0 24 24" fill="currentColor" opacity="0.6"><path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v6.81l-6-1.15V13zm7 .25L20 13v8.75l-10-1.15V13.25z"/></svg>
+                            <h3 style="color:#888888">Windows</h3>
+                            <span class="badge" style="font-size:1rem;padding:0.4em 0.8em;background-color:#888888;color:#050505">VST3</span>
+                        </div>
+                        <ul class="req-list" style="padding-left:1.5rem;padding-right:1.5rem">
+                            <li>Windows 10+</li>
+                            <li>4 GB RAM</li>
+                            <li>Intel 64-bit, 4 cores, 3.4 GHz CPU</li>
+                            <li>100 MB free disk space</li>
+                            <li>Internet connection</li>
+                            <li>Compatible hosts: Ableton Live, Cubase, FL Studio, Bitwig, REAPER</li>
+                            <li>Third-party plugins or hardware to generate drum sounds</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 - Designed and <a href="vibe-coding.html" class="text-inherit">Vibe-coded</a> by Artur Nowak. <a href="https://github.com/augmaticaudio/gre" class="text-inherit">Open Source</a></p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Fetch file list from GitHub API and render download cards
+        (async function() {
+            const container = document.getElementById('file-list');
+            const repo = 'augmaticaudio/augmaticaudio.github.io';
+            const path = 'download';
+            const apiUrl = `https://api.github.com/repos/${repo}/contents/${path}`;
+
+            function platformLabel(filename) {
+                if (filename.includes('macOS') && filename.endsWith('.pkg'))
+                    return 'macOS Installer (Intel & Apple Silicon)';
+                if (filename.includes('Windows') && filename.endsWith('.exe'))
+                    return 'Windows Installer';
+                if (filename.endsWith('.pkg')) return 'macOS Installer';
+                if (filename.endsWith('.exe')) return 'Windows Installer';
+                if (filename.endsWith('.zip')) return 'ZIP Archive';
+                return 'File';
+            }
+
+            function formatSize(bytes) {
+                if (bytes >= 1048576) return (bytes / 1048576).toFixed(1) + ' MB';
+                if (bytes >= 1024) return (bytes / 1024).toFixed(0) + ' KB';
+                return bytes + ' B';
+            }
+
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) throw new Error(response.status);
+                const files = await response.json();
+
+                // Filter to downloadable files only (no directories, no dotfiles)
+                const downloadable = files.filter(f => f.type === 'file' && !f.name.startsWith('.'));
+
+                if (downloadable.length === 0) {
+                    container.innerHTML = '<p class="text-muted text-center">No files available.</p>';
+                    return;
+                }
+
+                // Sort: macOS first, then Windows, then alphabetical
+                downloadable.sort((a, b) => {
+                    const aM = a.name.includes('macOS') ? 0 : 1;
+                    const bM = b.name.includes('macOS') ? 0 : 1;
+                    if (aM !== bM) return aM - bM;
+                    return a.name.localeCompare(b.name);
+                });
+
+                container.innerHTML = '<p class="file-list-header">' + downloadable.length + ' file' + (downloadable.length !== 1 ? 's' : '') + ' available</p>';
+
+                for (const file of downloadable) {
+                    const card = document.createElement('div');
+                    card.className = 'download-card';
+                    card.innerHTML = `
+                        <div class="file-info">
+                            <h3>${file.name}</h3>
+                            <span class="file-meta">${platformLabel(file.name)}${file.size ? ' &middot; ' + formatSize(file.size) : ''}</span>
+                        </div>
+                        <a href="download/${file.name}" class="btn btn-outline-accent" download>Download</a>
+                    `;
+                    container.appendChild(card);
+                }
+            } catch (e) {
+                // API failed — show static fallback links
+                container.innerHTML = `
+                    <div class="download-card">
+                        <div class="file-info">
+                            <h3>Augmatic-GRE-VST3-macOS-1.2.0.pkg</h3>
+                            <span class="file-meta">macOS Installer (Intel &amp; Apple Silicon)</span>
+                        </div>
+                        <a href="download/Augmatic-GRE-VST3-macOS-1.2.0.pkg" class="btn btn-outline-accent" download>Download</a>
+                    </div>
+                    <div class="download-card">
+                        <div class="file-info">
+                            <h3>Augmatic-GRE-VST3-Windows-1.2.0.exe</h3>
+                            <span class="file-meta">Windows Installer</span>
+                        </div>
+                        <a href="download/Augmatic-GRE-VST3-Windows-1.2.0.exe" class="btn btn-outline-accent" download>Download</a>
+                    </div>
+                `;
+            }
+        })();
+    </script>
+</body>
+</html>
